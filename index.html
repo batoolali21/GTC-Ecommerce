@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GTC - Global Tobacco Company | Premium Tobacco Company</title>
+	<link rel="stylesheet" href="STYLE2.css">
+</head>
+<body>
+
+	<!-- Header & Navigation Bar -->
+	<header class="header-nav">
+		<div class="container navbar-inner">
+			<a href="index.html" class="brand-logo-link">
+				<img src="img/Logo.jpeg" alt="GTC Logo" class="brand-logo-img">
+				<div>
+					<span class="brand-title">GTC</span>
+					<span class="brand-subtitle">Golden Tobacco Company</span>
+				</div>
+			</a>
+
+			<nav>
+				<ul class="nav-links">
+					<li><a href="index.html" class="nav-link active">Home</a></li>
+					<li><a href="products.html" class="nav-link">Products</a></li>
+					<li><a href="#about" class="nav-link">About Owner</a></li>
+					<li><a href="contact.html" class="nav-link">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Section (Full Cover Owner Image) -->
+	<section class="hero-owner-section">
+		<img src="img/Hero image.jpeg" alt="GTC Tobacco Owner & Headquarters" class="hero-bg-img">
+		<div class="hero-overlay"></div>
+		<div class="hero-content">
+			<span class="hero-badge">Est. Premium Quality</span>
+			<h1 class="hero-title">Welcome to <span>Global Tobacco Company</span></h1>
+			<p class="hero-description">Pakistan's Premier Wholesale & Fine Tobacco Company. Offering authentic Virginia leaf cigarettes, hand-picked fine cut tobacco, premium hookah flavors, and luxury smoking accessories.</p>
+			<a href="products.html" class="hero-cta-btn">
+				Explore Tobacco Catalog &rarr;
+			</a>
+		</div>
+	</section>
+
+	<!-- Products Showcase Section -->
+	<section class="section-padding container" id="products">
+		<div class="section-header">
+			<h2 class="section-title">Our Premium Products</h2>
+			<p class="section-subtitle">Discover our exclusive collection of 24 handcrafted tobacco blends and smoking accessories. Click any product to view details and order directly on WhatsApp.</p>
+		</div>
+
+		<!-- Category Filter Buttons -->
+		<div class="products-filter-bar">
+			<button class="filter-btn active" onclick="filterProducts('all', this)">All Products (24)</button>
+			<button class="filter-btn" onclick="filterProducts('Cigarettes', this)">Cigarettes</button>
+			<button class="filter-btn" onclick="filterProducts('Fine Cut Tobacco', this)">Fine Cut</button>
+			<button class="filter-btn" onclick="filterProducts('Hookah Flavors', this)">Hookah Flavors</button>
+			<button class="filter-btn" onclick="filterProducts('Cigars & Cigarillos', this)">Cigars</button>
+			<button class="filter-btn" onclick="filterProducts('Accessories', this)">Accessories</button>
+		</div>
+
+		<!-- Dynamic Products Grid -->
+		<div class="product-grid" id="main-product-grid">
+			<!-- Product cards populated dynamically by JavaScript -->
+		</div>
+	</section>
+
+	<!-- About Owner & Company Section -->
+	<section class="section-padding" id="about" style="background: rgba(22, 14, 10, 0.7); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">About Golden Tobacco Company</h2>
+				<p class="section-subtitle">Uncompromised quality and heritage in tobacco distribution.</p>
+			</div>
+
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+				<div style="border-radius: 16px; overflow: hidden; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-luxury);">
+					<img src="img/Hero image.jpeg" alt="GTC Owner" style="width: 100%; height: 380px; object-fit: cover;">
+				</div>
+				<div>
+					<h3 style="font-size: 26px; color: var(--accent-gold); margin-bottom: 15px;">Leadership & Tradition</h3>
+					<p style="color: var(--text-light); margin-bottom: 15px; font-size: 16px; line-height: 1.7;">
+						At Golden Tobacco Company (GTC), we take pride in delivering the finest tobacco products in the region. Under expert guidance and commitment to excellence, GTC has established a reputation for reliability, premium quality leaf sourcing, and top-tier customer service.
+					</p>
+					<p style="color: var(--text-muted); font-size: 15px; line-height: 1.7; margin-bottom: 25px;">
+						Whether you require bulk distribution, specialty hookah molasses, fine-cut rolling leaf, or luxury smoking gear, GTC provides customized service directly to your doorstep.
+					</p>
+					<a href="contact.html" class="hero-cta-btn" style="padding: 10px 24px; font-size: 14px;">Contact Owner & Management &rarr;</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact & Location Section -->
+	<section class="section-padding container" id="contact">
+		<div class="section-header">
+			<h2 class="section-title">Contact Us & Location</h2>
+			<p class="section-subtitle">Get in touch with our team directly via phone, WhatsApp, or social channels.</p>
+		</div>
+
+		<div class="contact-grid">
+			<!-- Phone Contacts Card -->
+			<div class="contact-card">
+				<div class="contact-card-icon">📞</div>
+				<h3 class="contact-card-title">Call or WhatsApp</h3>
+				<p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Direct line to our sales & support representatives:</p>
+				<div class="phone-list">
+					<a href="https://wa.me/923164970924" target="_blank" class="phone-item">
+						<span>💬 0316 4970924</span>
+					</a>
+					<a href="tel:03001234567" class="phone-item">
+						<span>📞 0300 1234567</span>
+					</a>
+					<a href="tel:03217654321" class="phone-item">
+						<span>📞 0321 7654321</span>
+					</a>
+				</div>
+			</div>
+
+			<!-- Social Media Links Card -->
+			<div class="contact-card">
+				<div class="contact-card-icon">🌐</div>
+				<h3 class="contact-card-title">Social Channels</h3>
+				<p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">Follow our official pages for latest stock updates:</p>
+				<div class="social-buttons-wrapper">
+					<a href="https://instagram.com/GTC_07" target="_blank" class="social-btn instagram">
+						<span> Instagram</span>
+					</a>
+					<a href="https://facebook.com/GlobalTradingCenter" target="_blank" class="social-btn facebook">
+						<span> Facebook</span>
+					</a>
+				</div>
+				<p style="color: var(--text-muted); font-size: 13px; margin-top: 20px;">Email: GTC_company@gmail.com</p>
+			</div>
+		</div>
+
+		<!-- Google Maps Direction Location Pin Card -->
+		<div class="map-direction-card">
+			<div style="font-size: 40px; margin-bottom: 10px;">📍</div>
+			<h3 style="font-size: 24px; color: var(--accent-gold); margin-bottom: 10px;">Our Store & Office Location</h3>
+			<p style="font-size: 18px; color: #ffffff; margin-bottom: 15px; font-weight: 600;">
+				Central Plaza, 41, Barkat Market, Garden Town, Lahore, Pakistan
+			</p>
+			<p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+				Click below to open Google Maps navigation for live turn-by-turn driving directions to our store!
+			</p>
+			<a href="https://www.google.com/maps/search/?api=1&query=Central+Plaza,+41,+Barkat+Market,+Garden+Town,+Lahore,+Pakistan" 
+			   target="_blank" 
+			   rel="noopener noreferrer" 
+			   class="map-location-btn">
+				🗺️ Open in Google Maps & Get Directions &rarr;
+			</a>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<p>&copy; 2026 Global Trading Center (GTC). All Rights Reserved.</p>
+			<p>Address: Central Plaza, 41, Barkat Market, Garden Town, Lahore, Pakistan | Phone: 03164970924</p>
+		</div>
+	</footer>
+
+	<!-- Realistic Floating WhatsApp Widget -->
+	<a href="https://wa.me/923164970924?text=Hello%20GTC!%20I%20have%20an%20inquiry%20regarding%20your%20products." 
+	   target="_blank" 
+	   rel="noopener noreferrer" 
+	   class="whatsapp-float" 
+	   aria-label="Chat with us on WhatsApp">
+		<span class="whatsapp-tooltip">Chat with us</span>
+		<div class="whatsapp-icon-wrapper">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="whatsapp-svg">
+				<path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+			</svg>
+			<span class="whatsapp-badge"></span>
+		</div>
+	</a>
+
+	<!-- Product Loading Script -->
+	<script src="products.js"></script>
+	<script>
+		function renderProducts(items) {
+			const container = document.getElementById('main-product-grid');
+			if (!container) return;
+
+			container.innerHTML = items.map(product => `
+				<a href="product-detail.html?id=${product.id}" class="product-card">
+					<div class="product-img-wrapper">
+						<img src="${product.image}" alt="${product.name}" class="product-card-img" loading="lazy">
+						<span class="product-category-tag">${product.category}</span>
+					</div>
+					<div class="product-card-body">
+						<h3 class="product-card-title">${product.name}</h3>
+						<p class="product-card-desc">${product.description}</p>
+						<div class="product-card-footer">
+							<span class="product-card-price">${product.price}</span>
+							<span class="view-details-btn">View Details &rarr;</span>
+						</div>
+					</div>
+				</a>
+			`).join('');
+		}
+
+		function filterProducts(category, btnElement) {
+			// Update active filter button
+			document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+			if (btnElement) btnElement.classList.add('active');
+
+			if (category === 'all') {
+				renderProducts(window.productsData);
+			} else {
+				const filtered = window.productsData.filter(p => p.category === category);
+				renderProducts(filtered);
+			}
+		}
+
+		document.addEventListener('DOMContentLoaded', () => {
+			if (window.productsData) {
+				renderProducts(window.productsData);
+			}
+		});
+	</script>
+
+</body>
+</html>
